@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(25, 23, 23);
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: 'inter', sans-serif;
+  margin-bottom: 3rem;
+  padding: 20px;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  color: rgb(213, 203, 175);
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.search {
+  display: flex;
+  justify-content: space-between;
+  padding: 3px 7px 3px 0;
+  width: 25rem;
+  border-radius: 20px;
+  background-color: rgb(54, 52, 52);
+}
+
+.search input {
+  border: none;
+  width: 100%;
+  height: 30px;
+  border-radius: 15px;
+  padding: 0 20px;
+  background-color: rgb(54, 52, 52);
+  color: white;
+  outline: none;
+  font-family: sans-serif;
+  font-size: 17px;
+}
+
+.search i {
+  font-size: 1.5rem;
+  margin-right: 5px;
+  margin-left: 10px;
+  padding-top: 2px;
+  color: rgb(213, 203, 175);
+  cursor: pointer;
+}
+
+.year {
+  position: absolute;
+  width: 100%;
+  height: 30px;
+  top: -30px;
+  padding: 2px 0 0 5px;
+  background-color: rgb(63, 60, 60);
+  color: white;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.poster img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+.movie-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  row-gap: 5rem;
+  column-gap: 20px;
+  margin-top: 5rem;
+}
+
+.movie {
+  height: 480px;
+  position: relative;
+  background-color: rgb(54, 52, 52);
+  transition: 0.33s;
+}
+
+.movie:hover {
+  scale: 105%;
+}
+
+.text {
+  color: white;
+  position: absolute;
+  bottom: 0;
+  background-color: rgb(54, 52, 52);
+  width: 100%;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  padding: 1px 5px 5px 10px;
+}
+
+.text span {
+  text-transform: uppercase;
+}
+
+.text h3 {
+  color: rgb(213, 203, 175);
+  margin-top: 5px;
+}
+
+.empty {
+  color: white;
+  text-align: center;
+  margin-top: 10rem;
+}
