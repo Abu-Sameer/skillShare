@@ -18,7 +18,6 @@ export default function Movie({ save }) {
             <motion.img
               onClick={handle}
               animate={{
-                scale: select ? ['150%'] : [],
                 rotate: select ? 360 : 0,
               }}
               transition={{
