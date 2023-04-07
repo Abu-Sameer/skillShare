@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import './App.css';
 import Movie from './component/Movie';
 
@@ -23,9 +23,11 @@ function App() {
     search(searchMovies);
   }
 
-  useEffect(() => {
-    search('kal');
-  }, []);
+  // this is used to set default value
+
+  // useEffect(() => {
+  //   search('kal');
+  // }, []);
 
   const moviesElement = movies.map((movieItem, index) => {
     return <Movie key={index} save={movieItem} />;
@@ -52,7 +54,7 @@ function App() {
         {movies.length > 0 ? (
           <div className={'movie-container'}>{moviesElement}</div>
         ) : (
-          <h1 className="empty">No Movies Found</h1>
+          <h1 className="empty"> Movies Search Entry is Empty</h1>
         )}
       </div>
     </div>
