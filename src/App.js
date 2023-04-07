@@ -24,7 +24,7 @@ function App() {
   }
 
   useEffect(() => {
-    search('hai');
+    search('kal');
   }, []);
 
   const moviesElement = movies.map((movieItem, index) => {
